@@ -9,7 +9,7 @@ pipeline{
 		   steps
 		   {
 		      sh"docker run --name httpdcontainor3 -itdp 90:80 httpd"
-              sh"docker cp index.html httpdcontainor:/usr/local/apache2/htdocs/ "
+              sh"docker cp index.html httpdcontainor3:/usr/local/apache2/htdocs/ "
 			  
 		   }
 		}
